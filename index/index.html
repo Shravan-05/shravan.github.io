@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        #a1 {
+            text-decoration: none;
+            font-size: 12px;
+        }
+        #menu
+        {
+            display: none;
+            width: 30px;
+        }
+        #pp1
+        {
+            width: 100%;
+            height: 100vh;
+            background-image: url("https://raw.githubusercontent.com/swwayam/tesla/main/public/images/model-s.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            
+        }
+        #pp
+        {
+            position: fixed;
+            left: 0;
+            right: 0;
+            backdrop-filter: blur(15px);
+height: 10vh;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+          
+        }
+        #p2
+        {
+            width: 50%;
+            height: 20px;
+        }
+        #a1
+        {
+            color: black;
+
+        }
+        #head
+        {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            text-align: center;
+
+        }
+        ul{
+            width: 100%;
+            display: flex;
+            color: black;
+
+            justify-content: space-evenly;
+        }
+        #nn
+        {
+            width: 20%;
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 15px;
+        
+        }
+        #sym
+        {
+            margin-left: 10px;
+        }
+        #wr
+        {
+            display: none;
+            width: 30px;
+        }
+        input
+        {
+            display: none;
+        }
+        #c1
+        {
+            display: none;
+        }
+        #b1
+        {
+            color: white;
+            background-color: black;
+            height: 40px;
+            width: 200px;
+            border: none;
+            border-radius: 20px;
+
+        }
+        #b2
+        {
+            color: white;
+            background-color: black;
+            border: none;
+            height: 40px;
+            width: 200px;
+            border-radius: 20px;
+
+        }
+        #head
+        {
+            width: 90%;
+            margin: 0 auto;
+            
+        }
+        #h2
+        {
+            display: flex;
+            height: 50vh;
+            width: 30%;
+justify-content: space-evenly;
+align-items: center;
+        }
+        #arrow
+        {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation-name: color;
+            animation-duration: 1s;
+            animation-iteration-count: infinite;
+            margin-bottom: 2rem;
+        }
+        #ar
+        {
+            width: 50px;
+        }
+        @keyframes color{
+            0%{transform: translateY(0px);}
+            50%{transform: translateY(10px);}
+            100%{transform: translateY(5px);}
+        }
+        #car1
+        {
+            background-image: url("https://raw.githubusercontent.com/swwayam/tesla/main/public/images/model-y.jpg");
+            width: 100%;
+            height:  100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        #car2
+        {
+            background-image: url("https://raw.githubusercontent.com/swwayam/tesla/main/public/images/model-3.jpg");
+            width: 100%;
+            height:  100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        #car3
+        {
+            background-image: url("https://raw.githubusercontent.com/swwayam/tesla/main/public/images/model-x.jpg");
+            width: 100%;
+            height:  100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        #car4
+        {
+            background-image: url("https://raw.githubusercontent.com/swwayam/tesla/main/public/images/solar-panel.jpg");
+            width: 100%;
+            height:  100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+        #car5
+        {
+            background-image: url("https://raw.githubusercontent.com/swwayam/tesla/main/public/images/accessories.jpg");
+            width: 100%;
+            height:  100vh;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-align: center;
+        }
+      
+     @media screen and (max-width:1164px) and (min-width:1000px)
+     {
+       
+            #nn
+        {
+            width: 30%;
+            
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 13px;
+        
+        }
+        #wr
+        {
+            display: none;
+            width: 30px;
+        }
+            
+        }
+        @media screen and (max-width:1000px) and (min-width:200px)
+     {
+        body{
+            right: 0;
+            left: 0;
+        }
+        #menu
+        {
+            display: block;
+        }
+        #sym
+        {
+            width: 40px;
+        }
+        #menu
+        {
+            width: 20px;
+        }
+        #wr
+        {
+            display: block;
+            width: 30px;
+        }
+        
+           #p2{
+            position:absolute;
+            top: 0.1rem;
+            width: 50%;
+            height: 100vh;
+        background-color: white;
+right: -100%;
+display: none;
+           }
+           ul{
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+
+           }
+           
+         
+        
+        #check:checked~#p2
+            {
+        display: block;
+        right: 0%;
+            }
+           
+    #h2
+    {
+        height: 20vh;
+        width: 100%;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+align-items: center;
+    }
+    #nn
+        {
+            width: 50%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 10px;
+        
+        }
+    #b1
+        {
+            color: white;
+            background-color: black;
+            height: 40px;
+            width: 150px;
+            border: none;
+            font-size: 10px;
+            border-radius: 20px;
+
+        }
+        #b2
+        {
+            color: white;
+            background-color: black;
+            border: none;
+            height: 40px;
+            width: 150px;
+            border-radius: 20px;
+            font-size: 10px;
+
+        }
+        #menu
+        {
+            width: 20px;
+        }
+           
+        }
+        @media screen and (max-width:300px) and (min-width:200px)
+        {
+            #nn
+        {
+            width: 70%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            font-size: 10px;
+        
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="pp1">
+        <div id="pp">
+        <div id="p1">
+            <img src="https://raw.githubusercontent.com/swwayam/tesla/f7826bd2d32c5edf1401db6485a57fc10537e82b/public/images/logo.svg "
+                id="sym">
+        </div>
+
+        <input type="checkbox" id="check">
+        <div id="p2">
+
+            <label for="check"><img src="https://cdn-icons-png.flaticon.com/128/9312/9312232.png" id="wr"></label>
+
+            <ul>
+                <li><a href="#" id="a1">MODEL S</a></li>
+                <li><a href="#" id="a1">MODEL 3</a></li>
+                <li><a href="#" id="a1">MODEL X</a></li>
+                <li><a href="#" id="a1">MODEL Y</a></li>
+                <li><a href="#" id="a1">SOLAR ROOF</a></li>
+                <li><a href="#" id="a1">SOLAR PANEL</a></li>
+
+            </ul>
+           
+        </div>
+        <div id="nn">
+            <div id="n1">
+                SHOP</div>
+            <div id="n1">
+                TESLA ACCOUNT
+            </div>
+            <label for="check"><img src="https://cdn-icons-png.flaticon.com/128/6015/6015685.png" id="menu"></label>
+
+        </div>
+        
+    </div>
+   
+    <div id="head">
+        <div id="h1">
+<h1>Model S</h1>
+  <h3>  Order Online for Touchless Delivery</h3>
+  </div>
+  <div id="h2">
+<button id="b1">CUSTOM ORDER</button>
+<button id="b2">EXISTINGINVENTORY</button>
+  </div>
+  
+    </div>
+    <div id="arrow">
+<img src="https://cdn-icons-png.flaticon.com/128/10728/10728680.png" id="ar">
+    </div>  
+    </div>
+
+    <div id="car1">
+<div id="h1">
+    <h1>Model S</h1>
+    <h3>  Order Online for Touchless Delivery</h3>
+</div>
+<div id="h2">
+    <button id="b1">CUSTOM ORDER</button>
+    <button id="b2">EXISTINGINVENTORY</button>
+</div>
+</div>
+<div id="car2">
+    <div id="h1">
+        <h1>Model S</h1>
+        <h3>  Order Online for Touchless Delivery</h3>
+    </div>
+    <div id="h2">
+        <button id="b1">CUSTOM ORDER</button>
+        <button id="b2">EXISTINGINVENTORY</button>
+    </div>
+    </div>
+    <div id="car3">
+        <div id="h1">
+            <h1>Model S</h1>
+            <h3>  Order Online for Touchless Delivery</h3>
+        </div>
+        <div id="h2">
+            <button id="b1">CUSTOM ORDER</button>
+            <button id="b2">EXISTINGINVENTORY</button>
+        </div>
+        </div>
+        <div id="car4">
+            <div id="h1">
+                <h1>Solar Panels</h1>
+                <h3>  Lowest Cost Solar Panels in America
+
+                </h3>
+            </div>
+            <div id="h2">
+                <button id="b1"> ORDER NOW</button>
+                <button id="b2">LEARN MORE</button>
+            </div>
+            </div>
+            <div id="car5">
+                <div id="h1">
+                    <h1>Acessories</h1>
+                    
+                </div>
+                <div id="h2">
+                    <button id="b1"> SHOP NOW</button>
+        
+                </div>
+            </div>
+    <script>
+        let a=document.getElementById("p2");
+        let w=document.getElementById("wr");
+        let c=document.getElementById("menu");
+       
+    </script>
+</body>
+
+</html>
